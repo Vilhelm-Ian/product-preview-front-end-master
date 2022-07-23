@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("https://fonts.google.com/specimen/Montserrat");
+  src: url("http://fonts.google.com/specimen/Montserrat");
 }
 @font-face {
   font-family: "Fraunces";
-  src: url("https://fonts.google.com/specimen/Fraunces");
+  src: url("http://fonts.google.com/specimen/Fraunces");
 }
 body {
   margin: 0;
