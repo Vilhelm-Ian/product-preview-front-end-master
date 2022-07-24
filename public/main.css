@@ -26,7 +26,8 @@ p {
   position: absolute;
   background: white;
   left: 50%;
-  transform: translate(-50%, 0);
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 1em;
   border-radius: 8px;
   overflow: hidden;

@@ -35,7 +35,8 @@ p {
 	position: absolute;
 	background: white;
 	left: 50%;
-	transform: translate(-50%,0);
+	top: 50%;
+	transform: translate(-50%,-50%);
 	margin-top: 1em;
 	border-radius: 8px;
 	overflow: hidden;
@@ -44,7 +45,6 @@ p {
 	align-items: center;
 	flex-direction: column;
 	max-width: 50%;
-
 }
 	.desktop-image {
 		display: none;
