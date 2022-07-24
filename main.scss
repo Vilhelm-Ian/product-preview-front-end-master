@@ -42,7 +42,6 @@ p {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	max-width: 660px;
 	max-width: 50%;
 }
 .desktop-image {
@@ -96,6 +95,7 @@ p {
 	.container {
 		flex-direction: row;
 		align-items: initial;
+		max-width: 660px;
 	}
 	.desktop-image {
 		display: block;
