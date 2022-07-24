@@ -41,9 +41,14 @@ p {
 	overflow: hidden;
 	width: 90%;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	flex-direction: column;
+	max-width: 50%;
+
 }
+	.desktop-image {
+		display: none;
+	}
 
 .content {
 	width: 90%;
@@ -88,6 +93,24 @@ p {
 	}
 }
 
+
+	@media (min-width: 750px) {
+		.container {
+			flex-direction: row;
+			align-items: initial;
+		}
+		.desktop-image {
+			display: block;
+			width: 50%;
+			aspect-ratio: 1;
+		}
+		.mobile-image {
+			display: none;
+		}
+		.content {
+			margin: 1em;
+		}
+	}
 
 
 
