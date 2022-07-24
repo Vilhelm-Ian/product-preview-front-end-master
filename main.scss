@@ -4,39 +4,37 @@ $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url("https://fonts.google.com/specimen/Montserrat");
-	}
+	font-family: "Montserrat";
+	src: url("https://fonts.google.com/specimen/Montserrat");
+}
 
 @font-face {
-    font-family: 'Fraunces';
-    src: url("https://fonts.google.com/specimen/Fraunces");
-	}
+	font-family: "Fraunces";
+	src: url("https://fonts.google.com/specimen/Fraunces");
+}
 
 body {
 	margin: 0;
-	background: $cream; 
+	background: $cream;
 }
 
 img {
 	max-width: 100%;
 }
 
-
 p {
-	font-size: calc(14/16)rem;
+	font-size: calc(14 / 16) rem;
 	color: $dark-grayish-blue;
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
 }
-
 
 .container {
 	position: absolute;
 	background: white;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	margin-top: 1em;
 	border-radius: 8px;
 	overflow: hidden;
@@ -46,16 +44,16 @@ p {
 	flex-direction: column;
 	max-width: 50%;
 }
-	.desktop-image {
-		display: none;
-	}
+.desktop-image {
+	display: none;
+}
 
 .content {
 	width: 90%;
 	margin-bottom: 1em;
 
 	.product {
-		font-size: 0.8rem; 
+		font-size: 0.8rem;
 	}
 
 	.title {
@@ -65,21 +63,21 @@ p {
 	}
 
 	.price {
-		font-family: Fraunces; 
+		font-family: Fraunces;
 	}
 
 	.discount {
-	color: $dark-cyan;
-	font-size: 2rem;
-	font-weight: 700;
+		color: $dark-cyan;
+		font-size: 2rem;
+		font-weight: 700;
 	}
 
 	.previous-price {
 		margin-left: 1rem;
-   text-decoration: line-through;
+		text-decoration: line-through;
 		color: $dark-grayish-blue;
 	}
-	
+
 	button {
 		width: 100%;
 		background: $dark-cyan;
@@ -93,24 +91,21 @@ p {
 	}
 }
 
-
-	@media (min-width: 750px) {
-		.container {
-			flex-direction: row;
-			align-items: initial;
-		}
-		.desktop-image {
-			display: block;
-			width: 50%;
-			aspect-ratio: 1;
-		}
-		.mobile-image {
-			display: none;
-		}
-		.content {
-			margin: 1em;
-		}
+@media (min-width: 750px) {
+	.container {
+		flex-direction: row;
+		align-items: initial;
 	}
-
-
-
+	.desktop-image {
+		display: block;
+		width: 50%;
+		aspect-ratio: 1;
+	}
+	.mobile-image {
+		display: none;
+	}
+	.content {
+		margin: 1em;
+		width: 50%;
+	}
+}
